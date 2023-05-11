@@ -1,0 +1,43 @@
+:root{
+    --color-white: #ffffff;
+    --color-light: #f1f5f9;
+    --color-black: #121212;
+    --color-night: #001632;
+
+    --color-red: #f44336;
+    --color-blue: #1a73e8;
+    --color-gray: #80868b;
+    --color-grayish: #dadce0;
+}
+
+.register-page{
+    background: var(--color-light);
+    color: var(--color-black);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80rem;
+        min-height: 100vh;
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+    .wrapper {
+        width: 100%;
+        max-width: 28rem;
+        padding: 2rem 2.5rem;
+        margin: 2rem auto;
+        border-radius: 0.5rem;
+        background: var(--color-white);
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 767px) {
+    .register-page{
+        .container{
+            padding: 0;
+        }
+    }
+}

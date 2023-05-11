@@ -1,0 +1,196 @@
+@import "react-image-gallery/styles/scss/image-gallery.scss";
+
+.book-container {
+    min-height: calc(100vh - 130px);
+
+    .book-detail {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        padding: 20px 40px;
+        min-height: 590px;
+        .book-detail--img{
+            .original-class{
+                img{
+                    height: 320px;
+                    cursor: pointer;
+                }
+            }
+            .thumbnail-class{
+                // min-height: 120px;
+                // object-fit: cover;
+                img{
+                    height: 92px;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+            }
+        }
+        .book-detail--content {
+            .author {
+                a {
+                    text-decoration: none;
+                    color: #0a68ff;
+                }
+            }
+
+            .title {
+                font-size: 1.5rem;
+                color: #858080;
+                font-weight: 500;
+                padding-top: 10px;
+            }
+
+            .rating {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+
+                .rate-text {
+                    margin-left: 10px;
+                }
+
+                padding: 10px 0;
+            }
+
+            .price {
+                color: #d0011b;
+                font-size: 32px;
+                font-weight: 500;
+                background: #fafafa;
+                padding: 16px;
+            }
+
+            .shipping {
+                display: grid;
+                grid-template-columns: 7.75rem 1fr;
+                padding: 10px 0;
+            }
+
+            .quantity {
+                display: grid;
+                grid-template-columns: 7.75rem 1fr;
+                padding: 10px 0;
+
+                .quantity-btn {
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        outline: none;
+                        cursor: pointer;
+                        border: 0;
+                        font-size: .875rem;
+                        font-weight: 300;
+                        line-height: 1;
+                        letter-spacing: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: background-color .1s cubic-bezier(.4, 0, .6, 1);
+                        border: 1px solid rgba(0, 0, 0, .09);
+                        border-radius: 2px;
+                        background: transparent;
+                        color: rgba(0, 0, 0, .8);
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    input {
+                        // outline: none;
+                        width: 50px;
+                        height: 32px;
+                        border-left: 0;
+                        border-right: 0;
+                        border: 1px solid rgba(0, 0, 0, .09);
+                        font-size: 16px;
+                        font-weight: 400;
+                        box-sizing: border-box;
+                        text-align: center;
+                        cursor: text;
+                        border-radius: 0;
+                        -webkit-appearance: none;
+                    }
+                }
+            }
+
+            .buy {
+                padding-top: 30px;
+                display: flex;
+
+                button {
+                    font-size: 16px;
+                    padding: 0 20px;
+                    line-height: 48px;
+                    margin-right: 16px;
+                    border-radius: 2px;
+                    text-transform: capitalize;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .btn-cart {
+                    border: 1px solid #d0011b;
+                    color: #d0011b;
+                    background-color: #d0011b14;
+
+                    span {
+                        margin-left: 10px;
+                    }
+
+                    &:hover {
+                        background-color: rgba($color: #d0011b14, $alpha: 0.15);
+
+                    }
+                }
+
+                .btn-text {
+                    color: #fff;
+                    background-color: #d0011d;
+                    font-weight: 500;
+                    border: none;
+
+                    &:hover {
+                        background-color: rgba($color: #d0011d, $alpha: 0.7);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.modal-detail{
+    .image-slider{
+        cursor: pointer;
+    }
+    .active{
+        border: 3px solid #ff704d;
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .book-container {
+
+        .book-detail {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            // grid-template-rows: 1fr 1fr;
+            .book-detail--content {
+                .buy {
+                    button {
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

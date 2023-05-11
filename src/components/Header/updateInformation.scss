@@ -1,0 +1,31 @@
+.information{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 80px;
+    .infor-image{
+        display: flex;
+        flex-direction: column;
+        .avatar{
+            margin-bottom: 16px;
+        }
+    }
+
+    .infor-content{
+
+
+        .btn-update{
+            background-color: #fff;
+            padding: 6px 16px;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+
+            &:hover{
+                border-color: #0073e6;
+                color: #0073e6;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

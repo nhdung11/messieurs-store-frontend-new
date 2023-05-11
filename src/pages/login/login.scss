@@ -1,0 +1,38 @@
+:root{
+    --color-white: #ffffff;
+    --color-light: #f1f5f9;
+    --color-black: #121212;
+    --color-night: #001632;
+
+    --color-red: #f44336;
+    --color-blue: #1a73e8;
+    --color-gray: #80868b;
+    --color-grayish: #dadce0;
+}
+
+.login-page{
+    background: var(--color-light);
+    color: var(--color-black);
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80rem;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
+
+    .wrapper{
+        width: 100%;
+        max-width: 28rem;
+        height: 100%;
+        padding: 2rem 2.5rem;
+        outline: none;
+        border: none;
+        margin: 2rem auto;
+        background: var(--color-white);
+        border-radius: 0.5rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+    }
+}

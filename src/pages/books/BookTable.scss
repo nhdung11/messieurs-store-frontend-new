@@ -1,0 +1,19 @@
+@media (max-width: 576px) {
+    .table-header{
+        .table-btn__export {
+            display: none;
+        }
+        .table-btn__add {
+            font-size: 12px;
+            padding: 4px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .table-header {
+        .table-btn__import{
+            display: none;
+        }
+    }
+}

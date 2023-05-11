@@ -1,0 +1,47 @@
+:root {
+    --black-color: #000;
+    --black-light-color: #001632;
+    --blur-color: #0073e6;
+    --blur-light-color: #b3d9ff;
+    --font-color: #737373;
+
+    --border-radius: 0.5rem;
+
+}
+
+
+.admin-page {
+    .header-admin {
+        height: 64px;
+        border-bottom: 1px solid #dcdbdbe6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+
+        .header-admin__btn {
+            font-size: 16px;
+            width: 64px;
+            height: 64px;
+            &:hover{
+                background-color: none;
+            }
+        }
+
+        // .header-admin__account {
+        //     color: var(--font-color);
+        // }
+    }
+    .footer-admin{
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+}
+
+// @media (max-width: 768px) {
+//     .admin-page {
+//         .admin-page__sider{
+//             // display: none;
+//         }
+//     }
+// }

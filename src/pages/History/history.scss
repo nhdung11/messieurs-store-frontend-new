@@ -1,0 +1,16 @@
+.history-page{
+    // width: 90vw;
+    // margin: 0 auto;
+    background: #efefef;
+    padding: 25px 60px;
+    
+}
+
+@media (max-width: 768px) {
+    .history-page{
+        padding: 0;
+        .history-table{
+            border-top: 5px solid #efefef;
+        }
+    }
+}
