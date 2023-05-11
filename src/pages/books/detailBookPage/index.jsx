@@ -7,7 +7,7 @@ import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import { BsCartPlus } from 'react-icons/bs'
 import ModalViewDetailImage from './ModalViewImageBook';
 import { useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { callFetchBookById } from '../../../services/apis';
 import LoadingSkeleton from './LoadingSkeleton';
 import { useDispatch } from 'react-redux';
@@ -20,7 +20,7 @@ const DetailBookPage = () => {
     const [currentIndexImage, setCurrentIndexImage] = useState(0)
     const [dataBook, setDataBook] = useState()
     const [currentQuantity, setCurrentQuantity] = useState(1)
-
+    const navigate = useNavigate()
     const dispatch = useDispatch()
     let location = useLocation()
     let params = new URLSearchParams(location.search)
@@ -156,7 +156,13 @@ const DetailBookPage = () => {
                                     <BsCartPlus />
                                     <span>Thêm vào giỏ hàng</span>
                                 </button>
-                                <button className='btn-text'>
+                                <button 
+                                className='btn-text'
+                                onClick={() => {
+                                    handleAddToCart(currentQuantity, dataBook)
+                                    navigate('/order')
+                                }}
+                                >
                                     Mua ngay
                                 </button>
                             </div>
