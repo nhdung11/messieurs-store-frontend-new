@@ -172,8 +172,8 @@ const Products = (props) => {
                         >
                             <div className="wrapper">
                                 <div className="thumbnail">
-                                    {/* <img src="http://localhost:8080/images/book/9-3220b4dac1f50035b534f7b5a907b62e.jpg"></img> */}
-                                    <img src={`http://localhost:8080/images/book/${item.thumbnail}`}></img>
+                                    {/* <img src={`http://localhost:8080/images/book/${item.thumbnail}`}></img> */}
+                                    <img src={`${import.meta.env.VITE_BACKEND_URL}/images/book/${item.thumbnail}`}></img>
                                 </div>
                                 <div className="text">{item.mainText}</div>
                                 {/* <div className="text">{`${item.mainText.length > 55 ? `${item.mainText.substring(0, 55)}...` : item.mainText }`}</div> */}
