@@ -158,10 +158,10 @@ const DetailBookPage = () => {
                                 </button>
                                 <button 
                                 className='btn-text'
-                                onClick={() => {
-                                    handleAddToCart(currentQuantity, dataBook)
-                                    navigate('/order')
-                                }}
+                                // onClick={() => {
+                                //     handleAddToCart(currentQuantity, dataBook)
+                                //     navigate('/order')
+                                // }}
                                 >
                                     Mua ngay
                                 </button>
